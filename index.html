@@ -33,18 +33,21 @@
             </nav>
             <ul class="header-link">
                 <li class="header-list">
-                    <svg class="contact-icon">
-                        <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>
-                    <a class="link-header cleart" href="mailtoinfo@devstudio.com">info@devstudio.com</a>
-
+                    <a class="link-header cleart" href="mailtoinfo@devstudio.com">
+                        <svg class="contact-icon">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
                 </li>
                 <li class="header-list">
-                    <svg class="contact-icon">
-                        <use href="./images/sprite.svg#icon-smartphone"></use>
-                    </svg>
-                    <a class="link-header cleart" href="tel+380961111111">+38 096 111 11 11</a>
 
+                    <a class="link-header cleart" href="tel+380961111111">
+                        <svg class="contact-icon">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
                 </li>
             </ul>
         </div>
@@ -393,16 +396,20 @@
                 </ul>
             </div>
             <div class="form-subscribe-send">
-                <p class="subscribe">Подпишитесь на рассылку</p>
                 <form class="form-footer-subscribe">
-                    <label class="form-subscribe-send-label" for="">
-                        <input class="form-subscribe-send-input" name="user-email-footer" type="email"
-                            placeholder="E-mail">
+                    <label class="form-subscribe-send-label" for="link-email">
+                        Подпишитесь на рассылку
+                        <span class="footer-link-for-email">
+                            <input id="link-email" type="email" class="form-subscribe-send-input"
+                                name="user-email-footer" type="email" placeholder="E-mail">
+                            <button class="form-Subscribe-link-send">Подписаться
+                                <svg class="icon-send-footer">
+                                    <use href="./images/sprite.svg#icon-send"></use>
+                                </svg>
+                        </span>
+
                     </label>
-                    <button class="form-Subscribe-link-send">Подписаться
-                        <svg class="icon-send-footer">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
+
                     </button>
                 </form>
             </div>
@@ -419,9 +426,7 @@
                 <form class="modal-form">
                     <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
                     <label class="modal-form-field">
-                        <span class="modal-forn-info-user">
-                            Имя
-                        </span>
+                        Имя
                         <span class="modal-window-span">
                             <input name="user-name" class="modal-form-imput" type="text" minlength="2"
                                 pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Использовать символы латиницы или кирилицы" required>
@@ -431,9 +436,7 @@
                         </span>
                     </label>
                     <label class="modal-form-field">
-                        <span class="modal-forn-info-user">
-                            Телефон
-                        </span>
+                        Телефон
                         <span class="modal-window-span">
                             <input name="user-tel" class="modal-form-imput" type="tel"
                                 pattern="(0-9){3}-(0-9){3}-(0-9){2}-(0-9){2}" title="096-000-00-00" required>
@@ -443,9 +446,7 @@
                         </span>
                     </label>
                     <label class="modal-form-field">
-                        <span class="modal-forn-info-user">
-                            Почта
-                        </span>
+                        Почта
                         <span class="modal-window-span">
                             <input name="user-email" class="modal-form-imput" type="email" required>
                             <svg class="modal-form-icon">
@@ -454,9 +455,7 @@
                         </span>
                     </label>
                     <label class="modal-form-massage-label">
-                        <span class="modal-forn-info-user">
-                            Комментарий
-                        </span>
+                        Комментарий
                         <textarea name="user-massage" class="modal-form-massage" placeholder="Введите текст"></textarea>
                     </label>
                     <div class="modal-form-checkbox-div">
