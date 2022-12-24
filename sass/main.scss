@@ -1,5 +1,39 @@
+// utils
+
 @import "./utils/var";
+
+@import "./utils/container";
+
+// base
 
 @import "./base/base";
 
-@import "./utils/container";
+@import "./base/footer";
+
+// loyout
+
+@import "./layout/header";
+
+@import "./layout/contact";
+
+@import "./layout/logo";
+
+@import "./layout/header";
+
+@import "./layout/modal.btn";
+
+@import "./layout/peculiarty";
+
+@import "./layout/tasks";
+
+@import "./layout/team";
+
+@import "./layout/clients";
+
+@import "./layout/footer-contact";
+
+@import "./layout/footer-social-link";
+
+@import "./layout/footer-subscribe";
+
+@import "./layout/modal-window";

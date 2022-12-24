@@ -1,0 +1,55 @@
+.peculiarity {
+    padding-bottom: 0;
+}
+
+.menu-peculiarity {
+    display: flex;
+    flex-direction: row;
+}
+
+.pecul-icon {
+    display: flex;
+    background-position: center;
+}
+
+.div-pecul-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+
+.pecul-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.peculiarity-menu {
+    width: 270px;
+    margin: 0 auto;
+    padding-right: 30px;
+}
+
+.list-peculiarity {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.list-peculiarity {
+    margin: 10px 0;
+    margin-top: 30px;
+}
+
+.text-peculiarity {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.70;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
