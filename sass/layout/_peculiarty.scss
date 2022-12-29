@@ -1,52 +1,44 @@
-.peculiarity {
+.about {
     padding-bottom: 0;
 }
 
-.menu-peculiarity {
+.about__menu {
     display: flex;
-    flex-direction: row;
 }
 
-.pecul-icon {
-    display: flex;
-    background-position: center;
+
+.about__item:not(:last-child) {
+    padding-right: 30px;
 }
 
-.div-pecul-icon {
+.about__card {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 270px;
-    height: 120px;
+}
+
+.about__element {
+    padding: 25px 100px;
     background-color: #F5F4FA;
 }
 
-.pecul-icon {
+.about__element-icon {
     width: 70px;
     height: 70px;
 }
 
-.peculiarity-menu {
-    width: 270px;
-    margin: 0 auto;
-    padding-right: 30px;
-}
-
-.list-peculiarity {
+.about__card-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
-}
-
-.list-peculiarity {
     margin: 10px 0;
     margin-top: 30px;
 }
 
-.text-peculiarity {
+.about__card-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.70;

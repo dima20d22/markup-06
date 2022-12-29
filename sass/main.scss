@@ -4,17 +4,21 @@
 
 @import "./utils/container";
 
+@import "./utils/visually-hidden";
+
 // base
 
 @import "./base/base";
 
 @import "./base/footer";
 
+// compoments
+
+@import "./components/btn";
+
 // loyout
 
 @import "./layout/header";
-
-@import "./layout/contact";
 
 @import "./layout/logo";
 
