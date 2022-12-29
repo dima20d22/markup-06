@@ -1,13 +1,21 @@
-.footer-link-list {
+.container-social {
     margin-right: 70px;
     margin-top: 15px;
 }
 
-.footer-title {
+.social__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
-.social-link-footer {
+.social__menu {
     display: flex;
     flex-wrap: wrap;
     width: 206px;
@@ -15,7 +23,7 @@
 
 }
 
-.social-list-link-footer {
+.social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,9 +33,9 @@
     background-color: rgba(255, 255, 255, 0.1);
     fill: #FFFFFF;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
-    background-color: #2196F3;
+    &:hover,
+    &:focus {
+        background-color: var(--bluelish);
+    }
 }

@@ -1,12 +1,12 @@
-.form-subscribe-send {
+.container-subscribe-send {
     display: block;
 }
 
-.form-footer-subscribe {
+.subscribe__form {
     display: flex;
 }
 
-.form-subscribe-send-label {
+.subscribe__form-label {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -16,12 +16,12 @@
     margin-top: 15px;
 }
 
-.footer-link-for-email {
+.subscribe__form-email {
     display: flex;
     align-items: flex-end;
 }
 
-.form-subscribe-send-input {
+.subscribe__form-input {
     background-color: transparent;
     border: none;
     outline: none;
@@ -35,27 +35,23 @@
     margin-right: 12px;
 }
 
-.form-Subscribe-link-send {
-    display: flex;
-    height: max-content;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+// .subscribe__form-btn-send {
+//     display: flex;
+//     height: max-content;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     letter-spacing: 0.06em;
+//     cursor: pointer;
+//     color: #FFFFFF;
+//     background: var(--bluelish);
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     border-radius: 4px;
+//     border: none;
+//     padding: 10px 25px;
+// }
 
-}
-
-.form-Subscribe-link-send {
-    cursor: pointer;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    padding: 10px 25px;
-}
-
-.icon-send-footer {
+.subscribe__form-icon {
     width: 24px;
     height: 24px;
     margin-left: 10px;

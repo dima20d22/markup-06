@@ -1,8 +1,8 @@
 :root {
   --main-font: "Roboto", sans-serif;
-  --blacklish: color: #212121;
-  --darkish: color: #757575;
-  --bluelish: color: #2196F3;
+  --blacklish: #212121;
+  --darkish: #757575;
+  --bluelish: #2196F3;
 }
 
 section {
@@ -64,7 +64,7 @@ img {
   display: block;
 }
 
-.cleart {
+a {
   text-decoration: none;
 }
 
@@ -75,7 +75,7 @@ img {
   padding: 94px 0;
 }
 
-.basic-div {
+.base-container {
   display: flex;
 }
 
@@ -97,6 +97,68 @@ img {
 }
 .btn {
   margin: 0 auto;
+}
+
+.subscribe__form-btn-send {
+  display: flex;
+  height: max-content;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #FFFFFF;
+  background: var(--bluelish);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  padding: 10px 25px;
+}
+
+.modal-form-button-send {
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  padding: 10px 55px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-button-send:focus {
+  background: #188CE8;
+  outline: none;
+}
+
+.logo--header {
+  margin-right: 92px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
+.logo--footer {
+  color: #FFFFFF;
+}
+
+.logo__web {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #2196F3;
 }
 
 .header {
@@ -186,27 +248,6 @@ img {
 }
 .contacts__icon:hover, .contacts__icon:focus {
   fill: #2196F3;
-}
-
-.logo--position {
-  margin-right: 92px;
-}
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: black;
-}
-
-.logo__start {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196F3;
 }
 
 .header {
@@ -489,86 +530,63 @@ img {
   height: 20px;
 }
 
-.regular-customers {
+.clients__title {
   color: #212121;
   font-size: 36px;
+  text-align: center;
   line-height: 42px;
   line-height: 100%;
   align-items: center;
-  Font-style: Bold;
-}
-
-.regular-customers {
   margin-bottom: 50px;
-  text-align: center;
 }
 
-.clients-menu {
+.clients__menu {
   display: flex;
 }
 
-.clients-link {
+.clients__element:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
   display: block;
   padding: 16px 32px;
   border: 1px solid #AFB1B8;
   border-radius: 5px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-link:hover svg,
-.clients-link:focus svg {
-  fill: #2196F3;
+.clients__link:hover svg, .clients__link:focus svg {
+  fill: var(--bluelish);
 }
-
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover, .clients__link:focus {
   outline: none;
-  border: 1px solid #2196F3;
+  border: 1px solid var(--bluelish);
 }
 
-.clients-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.clients-icon:focus .clients-icon:hover {
+.clients__icon:hover, .clients__icon:focus {
   fill: var(--bluelish);
 }
 
-.clients-list:not(:last-child) {
-  margin-right: 30px;
+.contact {
+  margin-right: 70px;
 }
 
-address {
+.contact__address {
   font-style: normal;
   margin-top: 20px;
 }
 
-.list-footer:not(:last-child) {
+.contact__element:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.logo-footer {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-}
-
-.logo-finish {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-}
-
-.link-mail-footer {
+.contact__link-email {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -576,21 +594,24 @@ address {
   color: #FFFFFF;
 }
 
-.link-footer {
+.contact__link {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-footer:hover,
-.link-footer:focus {
-  color: #2196F3;
+.contact__link:hover, .contact__link:focus {
+  color: var(--bluelish);
 }
 
-.footer-title {
+.container-social {
+  margin-right: 70px;
+  margin-top: 15px;
+}
+
+.social__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -599,29 +620,17 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-
-.social-div {
-  margin-right: 70px;
-}
-
-.footer-link-list {
-  margin-right: 70px;
-  margin-top: 15px;
-}
-
-.footer-title {
   margin-bottom: 20px;
 }
 
-.social-link-footer {
+.social__menu {
   display: flex;
   flex-wrap: wrap;
   width: 206px;
   justify-content: space-between;
 }
 
-.social-list-link-footer {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -632,21 +641,19 @@ address {
   fill: #FFFFFF;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
-  background-color: #2196F3;
+.social__link:hover, .social__link:focus {
+  background-color: var(--bluelish);
 }
 
-.form-subscribe-send {
+.container-subscribe-send {
   display: block;
 }
 
-.form-footer-subscribe {
+.subscribe__form {
   display: flex;
 }
 
-.form-subscribe-send-label {
+.subscribe__form-label {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -656,12 +663,12 @@ address {
   margin-top: 15px;
 }
 
-.footer-link-for-email {
+.subscribe__form-email {
   display: flex;
   align-items: flex-end;
 }
 
-.form-subscribe-send-input {
+.subscribe__form-input {
   background-color: transparent;
   border: none;
   outline: none;
@@ -675,26 +682,7 @@ address {
   margin-right: 12px;
 }
 
-.form-Subscribe-link-send {
-  display: flex;
-  height: max-content;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-}
-
-.form-Subscribe-link-send {
-  cursor: pointer;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  padding: 10px 25px;
-}
-
-.icon-send-footer {
+.subscribe__form-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -878,27 +866,6 @@ address {
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196F3;
-}
-
-.modal-form-button-send {
-  display: block;
-  margin: 0 auto;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  color: #FFFFFF;
-  background-color: #2196F3;
-  padding: 10px 55px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-button-send:focus {
-  background: #188CE8;
-  outline: none;
 }
 
 .team {
