@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="container container--header">
             <a class="logo logo--header" href="/"> <span class="logo__web">Web</span>Studio</a>
             <nav class="header__navi">
@@ -54,8 +54,8 @@
     </header>
     <main>
         <section class="hero">
-            <div class="heroic--header">
-                <h1 class="heroic__title">Эффективные решения для вашего бизнеса</h1>
+            <div class="hero--header">
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
@@ -349,7 +349,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container base-container">
+        <div class="container container--footer">
             <div class="contact">
                 <a class=" logo logo--footer" href="./index.html"><span class="logo__web">Web</span>Studio</a>
                 <address class="contact__address">
@@ -426,56 +426,56 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <div>
-                <form class="modal-window__form">
-                    <p class="modal-window__form-suptitle">Оставьте свои данные, мы вам перезвоним</p>
-                    <label class="modal-window__form-label">
-                        Имя
-                        <span class="modal-window__form-element">
-                            <input name="user-name" class="modal-window__form-imput" type="text" minlength="2"
-                                pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Использовать символы латиницы или кирилицы" required>
-                            <svg class="modal-window__form-icon">
-                                <use href="./images/sprite.svg#icon-vector"></use>
-                            </svg>
-                        </span>
-                    </label>
-                    <label class="modal-window__form-label">
-                        Телефон
-                        <span class="modal-window__form-element">
-                            <input name="user-tel" class="modal-window__form-imput" type="tel"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="096-000-00-00" required>
-                            <svg class="modal-window__form-icon">
-                                <use href="./images/sprite.svg#icon-vector-3"></use>
-                            </svg>
-                        </span>
-                    </label>
-                    <label class="modal-window__form-label">
-                        Почта
-                        <span class="modal-window__form-element">
-                            <input name="user-email" class="modal-window__form-imput" type="email" required>
-                            <svg class="modal-window__form-icon">
-                                <use href="./images/sprite.svg#icon-vector-2"></use>
-                            </svg>
-                        </span>
-                    </label>
-                    <label class="modal-window__form-massage-label">
-                        Комментарий
-                        <textarea name="user-massage" class="modal-window__form-massage"
-                            placeholder="Введите текст"></textarea>
-                    </label>
-                    <div class="modal-window__form-checkbox">
-                        <input class="modal-window__form-checkbox-input visually-hidden " type="checkbox"
-                            id="accept-policy">
-                        <label class="modal-window__form-checkbox-label" for="accept-policy">
-                            Соглашаюсь с рассылкой и принимаю&nbsp <a class="modal-window__form-link-accept-policy"
-                                href="">Условия
-                                договора</a></label>
-                    </div>
-                    <button type="submit" class=" btn modal-window--btn ">Отправить</button>
-                </form>
-            </div>
 
+            <form class="modal-window__form">
+                <p class="modal-window__form-suptitle">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="modal-window__form-label">
+                    Имя
+                    <span class="modal-window__form-element">
+                        <input name="user-name" class="modal-window__form-imput" type="text" minlength="2"
+                            pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Использовать символы латиницы или кирилицы" required>
+                        <svg class="modal-window__form-icon">
+                            <use href="./images/sprite.svg#icon-vector"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-window__form-label">
+                    Телефон
+                    <span class="modal-window__form-element">
+                        <input name="user-tel" class="modal-window__form-imput" type="tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="096-000-00-00" required>
+                        <svg class="modal-window__form-icon">
+                            <use href="./images/sprite.svg#icon-vector-3"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-window__form-label">
+                    Почта
+                    <span class="modal-window__form-element">
+                        <input name="user-email" class="modal-window__form-imput" type="email" required>
+                        <svg class="modal-window__form-icon">
+                            <use href="./images/sprite.svg#icon-vector-2"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-window__form-messege-label">
+                    Комментарий
+                    <textarea name="user-messege" class="modal-window__form-messege"
+                        placeholder="Введите текст"></textarea>
+                </label>
+                <div class="modal-window__form-checkbox">
+                    <input class="modal-window__form-checkbox-input visually-hidden " type="checkbox"
+                        id="accept-policy">
+                    <label class="modal-window__form-checkbox-label" for="accept-policy">
+                        Соглашаюсь с рассылкой и принимаю&nbsp <a class="modal-window__form-link-accept-policy"
+                            href="">Условия
+                            договора</a></label>
+                </div>
+                <button type="submit" class=" btn modal-window--btn ">Отправить</button>
+            </form>
         </div>
+
+
     </div>
     <script src="./js/modal.js"></script>
 

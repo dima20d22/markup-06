@@ -8,7 +8,7 @@
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--blacklish);
     margin-bottom: 50px;
 }
 
@@ -34,7 +34,7 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--blacklish);
     margin-bottom: 10px;
 }
 
@@ -44,7 +44,7 @@
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--darkish);
     margin-bottom: 16px;
 }
 
@@ -66,7 +66,7 @@
     &:hover,
     &:focus {
         fill: #FFFFFF;
-        background-color: #2196F3;
+        background-color: var(--bluelish);
     }
 }
 

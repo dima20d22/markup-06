@@ -1,16 +1,22 @@
 // utils
 
-@import "./utils/var";
-
 @import "./utils/container";
 
 @import "./utils/visually-hidden";
 
+@import "./utils/is-hidden";
+
 // base
+
+@import "./base/root";
 
 @import "./base/base";
 
-@import "./base/footer";
+@import "./base/header";
+
+@import "./base/main";
+
+
 
 // compoments
 
@@ -34,11 +40,7 @@
 
 @import "./layout/clients";
 
-@import "./layout/footer-contact";
-
-@import "./layout/footer-social-link";
-
-@import "./layout/footer-subscribe";
+@import "./layout/footer";
 
 @import "./layout/modal-window";
 
