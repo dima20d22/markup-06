@@ -54,7 +54,7 @@
     </header>
     <main>
         <section class="hero">
-            <div class="hero--header">
+            <div class="container--hero">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
@@ -121,19 +121,19 @@
                 <h2 class="tasks__title">Чем мы занимаемся</h2>
                 <ul class="tasks__menu">
                     <li class="tasks__element">
-                        <img class="tasks__element-img" src="./images/box/iimg.jpg" alt="доступные приложения"
-                            width="370" height="294" />
-                        <p class="tasks__element-text">Десктопные приложения</p>
+                        <img class="tasks__img" src="./images/box/iimg.jpg" alt="доступные приложения" width="370"
+                            height="294" />
+                        <p class="tasks__text">Десктопные приложения</p>
                     </li>
                     <li class="tasks__element">
-                        <img class="tasks__element-img" src="./images/box/mmobimg.jpg" alt="мобильные приложения"
-                            width="370" height="294" />
-                        <p class="tasks__element-text">Мобильные приложения</p>
+                        <img class="tasks__img" src="./images/box/mmobimg.jpg" alt="мобильные приложения" width="370"
+                            height="294" />
+                        <p class="tasks__text">Мобильные приложения</p>
                     </li>
                     <li class="tasks__element">
-                        <img class="tasks__element-img" src="./images/box/aappimg.jpg" alt="дизайнерские решения"
-                            width="370" height="294" />
-                        <p class="tasks__element-text">Дизайнерские решения</p>
+                        <img class="tasks__img" src="./images/box/aappimg.jpg" alt="дизайнерские решения" width="370"
+                            height="294" />
+                        <p class="tasks__text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -143,8 +143,8 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__menu">
                     <li class="team__element">
-                        <img class="team__element-img" src="./images/people/mman.img.jpg" alt="бородатый мужик"
-                            width="270" height="260">
+                        <img class="team__img" src="./images/people/mman.img.jpg" alt="бородатый мужик" width="270"
+                            height="260">
                         <div class="team__info">
                             <h3 class="team__info-name">Игорь Демьяненко</h3>
                             <p class="team__info-profession" lang="en">Produkt Designer</p>
@@ -181,7 +181,7 @@
                         </div>
                     </li>
                     <li class="team__element">
-                        <img class="team__element-img" src="./images/people/wwomanimg.jpg" alt="женщина" width="270"
+                        <img class="team__img" src="./images/people/wwomanimg.jpg" alt="женщина" width="270"
                             height="260">
                         <div class="team__info">
                             <h3 class="team__info-name">Ольга Репина</h3>
@@ -220,8 +220,7 @@
                         </div>
                     </li>
                     <li class="team__element">
-                        <img class="team__element-img" src="./images/people/mmannimg.jpg" alt="мужик" width="270"
-                            height="260">
+                        <img class="team__img" src="./images/people/mmannimg.jpg" alt="мужик" width="270" height="260">
                         <div class="team__info">
                             <h3 class="team__info-name">Николай Тарасов</h3>
                             <p class="team__info-profession" lang="en">Marketing</p>
@@ -258,8 +257,7 @@
                         </div>
                     </li>
                     <li class="team__element">
-                        <img class="team__element-img" src="./images/people/mmannnimg.jpg" alt="мужик" width="270"
-                            height="260">
+                        <img class="team__img" src="./images/people/mmannnimg.jpg" alt="мужик" width="270" height="260">
                         <div class="team__info">
                             <h3 class="team__info-name">Михаил Ермаков</h3>
                             <p class="team__info-profession" lang="en">UI Designer</p>
@@ -350,7 +348,7 @@
     </main>
     <footer class="footer">
         <div class="container container--footer">
-            <div class="contact">
+            <div class="footer__contact">
                 <a class=" logo logo--footer" href="./index.html"><span class="logo__web">Web</span>Studio</a>
                 <address class="contact__address">
                     <ul class="contact__menu">
@@ -368,7 +366,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="container-social">
+            <div class="footer__social">
                 <p class="social__title">Присоединяйтесь</p>
                 <ul class="social__menu">
                     <li class="social__element">
@@ -401,14 +399,14 @@
                     </li>
                 </ul>
             </div>
-            <div class="container-subscribe-send">
+            <div class="footer__subscribe-send">
                 <form class="subscribe__form">
-                    <label class="subscribe__form-label" for="link-email">
+                    <label class="subscribe__label" for="link-email">
                         Подпишитесь на рассылку
-                        <span class="subscribe__form-email">
-                            <input id="link-email" type="email" class="subscribe__form-input" name="user-email-footer"
+                        <span class="subscribe__email">
+                            <input id="link-email" type="email" class="subscribe__input" name="user-email-footer"
                                 type="email" placeholder="E-mail">
-                            <button class=" btn footer--btn">Подписаться
+                            <button class=" btn btm--footer">Подписаться
                                 <svg class="subscribe__form-icon">
                                     <use href="./images/sprite.svg#icon-send"></use>
                                 </svg>
@@ -420,19 +418,18 @@
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="container-modal-window">
+        <div class="modal-window">
             <button type="submit" class="modal-window__close-btn" data-modal-close>
-                <svg class="modal-window__close-btn-icon">
+                <svg class="modal-window__close-btn__icon">
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-
             <form class="modal-window__form">
-                <p class="modal-window__form-suptitle">Оставьте свои данные, мы вам перезвоним</p>
+                <p class="modal-window__form__suptitle">Оставьте свои данные, мы вам перезвоним</p>
                 <label class="modal-window__form-label">
                     Имя
                     <span class="modal-window__form-element">
-                        <input name="user-name" class="modal-window__form-imput" type="text" minlength="2"
+                        <input name="user-name" class="modal-window__form__imput" type="text" minlength="2"
                             pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Использовать символы латиницы или кирилицы" required>
                         <svg class="modal-window__form-icon">
                             <use href="./images/sprite.svg#icon-vector"></use>
@@ -442,7 +439,7 @@
                 <label class="modal-window__form-label">
                     Телефон
                     <span class="modal-window__form-element">
-                        <input name="user-tel" class="modal-window__form-imput" type="tel"
+                        <input name="user-tel" class="modal-window__form__imput" type="tel"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="096-000-00-00" required>
                         <svg class="modal-window__form-icon">
                             <use href="./images/sprite.svg#icon-vector-3"></use>
@@ -452,7 +449,7 @@
                 <label class="modal-window__form-label">
                     Почта
                     <span class="modal-window__form-element">
-                        <input name="user-email" class="modal-window__form-imput" type="email" required>
+                        <input name="user-email" class="modal-window__form__imput" type="email" required>
                         <svg class="modal-window__form-icon">
                             <use href="./images/sprite.svg#icon-vector-2"></use>
                         </svg>
@@ -464,14 +461,14 @@
                         placeholder="Введите текст"></textarea>
                 </label>
                 <div class="modal-window__form-checkbox">
-                    <input class="modal-window__form-checkbox-input visually-hidden " type="checkbox"
+                    <input class="modal-window__form__checkbox-input visually-hidden " type="checkbox"
                         id="accept-policy">
                     <label class="modal-window__form-checkbox-label" for="accept-policy">
                         Соглашаюсь с рассылкой и принимаю&nbsp <a class="modal-window__form-link-accept-policy"
                             href="">Условия
                             договора</a></label>
                 </div>
-                <button type="submit" class=" btn modal-window--btn ">Отправить</button>
+                <button type="submit" class=" btn btn--modal-window ">Отправить</button>
             </form>
         </div>
 

@@ -8,7 +8,7 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-modal-window {
+.modal-window {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -31,7 +31,7 @@
     margin: 8px 8px;
 }
 
-.modal-window__close-btn-icon {
+.modal-window__close-btn__icon {
     display: block;
     width: 30px;
     height: 30px;
@@ -50,7 +50,7 @@
     padding: 40px;
 }
 
-.modal-window__form-suptitle {
+.modal-window__form__suptitle {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -77,7 +77,7 @@
     margin-top: 4px;
 }
 
-.modal-window__form-imput {
+.modal-window__form__imput {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 100%;
@@ -152,7 +152,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 
-    .modal-window__form-checkbox-input:checked+&::before {
+    .modal-window__form__checkbox-input:checked+&::before {
         background-image: url("../images/icon-check-orig.svg");
     }
 
