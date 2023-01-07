@@ -1065,8 +1065,8 @@ section {
   color: var(--darkish);
 }
 
-.minilop-icon {
-  background-image: url("../../images/portfolio/minilopimg.jpg");
+.minilopimg-icon {
+  background-image: url("../../images/portfolio/minilopimgimg.jpg");
   width: 370px;
   height: 294px;
 }
