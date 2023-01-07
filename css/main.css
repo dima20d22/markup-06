@@ -1065,56 +1065,56 @@ section {
   color: var(--darkish);
 }
 
-.minilopimg-icon {
-  background-image: url("../../images/portfolio/minilopimgimg.jpg");
+.minilop-icon {
+  background-image: url(../images/portfolio/minilopimg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .basket-icon {
-  background-image: url("../../images/portfolio/basketimg.jpg");
+  background-image: url(../images/portfolio/basketimg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .fisch-icon {
-  background-image: url("../../images/portfolio/fischimg.jpg");
+  background-image: url(../images/portfolio/fischimg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .kopfho-icon {
-  background-image: url("../../images/portfolio/kopfhoimg.jpg");
+  background-image: url(../images/portfolio/kopfhoimg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .box-icon {
-  background-image: url("../../images/portfolio/boximg.jpg");
+  background-image: url(../images/portfolio/boximg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .bildsch-icon {
-  background-image: url("../../images/portfolio/bildschimg.jpg");
+  background-image: url(../images/portfolio/bildschimg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .buch-icon {
-  background-image: url("../../images/portfolio/buchimg.jpg");
+  background-image: url(../images/portfolio/buchimg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .tab-icon {
-  background-image: url("../../images/portfolio/tabimg.jpg");
+  background-image: url(../images/portfolio/tabimg.jpg);
   width: 370px;
   height: 294px;
 }
 
 .loptop-icon {
-  background-image: url("../../images/portfolio/loptopimg.jpg");
+  background-image: url(../images/portfolio/loptopimg.jpg);
   width: 370px;
   height: 294px;
 }/*# sourceMappingURL=main.css.map */
