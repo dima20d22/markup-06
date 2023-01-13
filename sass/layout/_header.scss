@@ -17,6 +17,11 @@
     line-height: 0;
     padding: 0;
     border: none;
+
+    &:hover,
+    &:focus {
+        fill: var(--bluelish);
+    }
 }
 
 .burger__icon {
@@ -24,98 +29,129 @@
     height: 16px;
 }
 
+@media screen and (min-width:768px) {
+    .container--header {
+        margin: 0;
+    }
 
-// .container--header {
-//     display: flex;
-//     align-items: center;
-// }
+    .burger-menu {
+        display: none;
+    }
 
-// .header__navi {
-//     display: flex;
-//     align-items: center;
-// }
+    .header__contacts {
+        display: unset;
+    }
 
-// .navi__menu {
-//     display: flex;
-//     align-items: center;
-// }
+    .navi__menu {
+        display: unset;
+    }
 
+    .header__navi {
+        display: flex;
+    }
 
+    .navi__menu {
+        display: flex;
+        align-items: center;
+        margin-left: 88px;
+    }
 
-// .navi__item {
-//     position: relative;
-//     &:not(:last-child) {
-//         margin-right: 50px;
-//     }
-// }
+    .navi__item {
+        position: relative;
 
-// .navi__link {
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: var(--blacklish);
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
 
-//     &:hover,
-//     &:focus {
-//         color: var(--bluelish);
-//     }
+    .navi__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--blacklish);
 
-//     &::after {
-//         position: absolute;
-//         display: flex;
-//         content: "";
-//         height: 4px;
-//         width: 100%;
-//         background-color: transparent;
-//         flex-shrink: 0;
-//         border-radius: 2px;
-//         padding: 0 0 25px 0;
-//         transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     }
+        &:hover,
+        &:focus {
+            color: var(--bluelish);
+        }
 
-//     &:hover::after {
-//         background: linear-gradient(to bottom, transparent 90%, #2196F3 10%);
-//     }
+        &::after {
+            position: absolute;
+            display: flex;
+            content: "";
+            height: 4px;
+            width: 100%;
+            background-color: transparent;
+            flex-shrink: 0;
+            border-radius: 2px;
+            padding: 0 0 25px 0;
+            transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-// }
+        &:hover::after {
+            background: linear-gradient(to bottom, transparent 90%, #2196F3 10%);
+        }
 
-// .header__contacts {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-// }
+    }
 
-// .contacts__elem:hover,
-// .contacts__elem:focus {
-//     Fill: var(--bluelish);
-//     color: var(--bluelish);
-// }
+    .header__contacts {
+        width: fit-content;
+    }
 
-// .contacts__link {
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: var(--darkish);
-//     margin-right: 50px;
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .contacts__elem {
 
-//     &:hover,
-//     &:focus {
-//         color: var(--bluelish);
-//     }
-// }
+        &:hover,
+        &:focus {
+            Fill: var(--bluelish);
+            color: var(--bluelish);
+        }
 
-// .contacts__icon {
-//     width: 16px;
-//     height: 12px;
-//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//     margin: 0 auto;
-//     margin-right: 10px;
+    }
 
-//     &:hover,
-//     &:focus {
-//         fill: var(--bluelish);
-//     }
-// }
+    .contacts__link {
+        @include font(500, 12px, 14px);
+        letter-spacing: 0.02em;
+        color: var(--darkish);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--bluelish);
+        }
+    }
+
+    .contacts__icon {
+        width: 10px;
+        height: 14px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-bottom: -3px;
+        margin-right: 8px;
+
+        &:hover,
+        &:focus {
+            fill: var(--bluelish);
+        }
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    .header__contacts {
+        display: flex;
+    }
+
+    .contacts__elem:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .contacts__link {
+        @include font(500, 14px, 16px);
+    }
+
+    .contacts__icon {
+        width: 12px;
+        height: 16px;
+    }
+}
